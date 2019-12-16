@@ -1,5 +1,5 @@
 import random
-	 
+
 # TO ADD NEW COLOR TO CLASS ADD: (COLOR VARIABLE NAME) = 'COLOR CODE'
 class color:
   PURPLE = '\033[95m'
@@ -19,7 +19,7 @@ wisdom = random.randint(1,100)
 charisma = random.randint(1,24)
 powers = [wisdom, charisma]
 
-stats = ["name:", "gender:", "age:"]
+stats = ["name:", "age:"]
 answers = []
 
 for x in stats:
@@ -37,5 +37,8 @@ for i, (stats, answers) in enumerate(zip(stats, answers)):
   
 print(color.BOLD, color.UNDERLINE, color.PURPLE + "The objective of the game:\n" + color.END)
 
-print("You're a prince and the princess have been taken by the villian called Skadooobedy!!!!!\n The aim of the game is to save the princess from Skadooobedy by answering questions.If you answer right you procced to the next level.\n If you save the princess you win but if you get a question wrong you lose.")
+print("Hello player,\nThe aim of the game is to help Shaun Donnelly save the princess from Bill Nye by answering science themed questions.\n If you get all the science questions right you win but if you get a question wrong you lose a chance. Once you have lost all your chances, you have lost the game!!")
 print( color.YELLOW +"Note that these will be multi choice question."+color.END) 
+
+print (color.BOLD,color.UNDERLINE,color.RED + " Easy mode"+ color.END)
+import game
